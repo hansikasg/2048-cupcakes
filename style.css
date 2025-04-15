@@ -1,0 +1,36 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  background: #fff0f5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #d6336c;
+}
+
+#game-container {
+  width: 320px;
+  margin: auto;
+  background: #f8e1f4;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 0 20px #ccc;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.tile {
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5px #aaa;
+}
