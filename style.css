@@ -1,120 +1,36 @@
-/* style.css */
-
 body {
-  background-color: #fdebf0;
   font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  background: #fff0f5;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  color: #d6336c;
 }
 
 #game-container {
-  text-align: center;
-  position: relative;
-}
-
-#header {
-  margin-bottom: 20px;
-}
-
-#header h1 {
-  font-size: 2.5em;
-  margin: 0;
-}
-
-#score-box {
-  font-size: 1.2em;
-  margin-top: 10px;
+  width: 320px;
+  margin: auto;
+  background: #f8e1f4;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 0 20px #ccc;
 }
 
 #grid-container {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  margin: auto;
-  background-color: #f9c5d1;
-  border-radius: 20px;
   display: grid;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(4, 1fr);
   gap: 5px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
 }
 
 .tile {
-  width: 100px;
-  height: 100px;
-  background-color: #f9dfe5;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease;
-  position: absolute;
-}
-
-.tile img {
-  width: 90%;
-  height: 90%;
-  object-fit: contain;
-}
-
-.score-popup {
-  position: absolute;
-  font-size: 1.5em;
-  color: #ff69b4;
-  animation: popup 0.6s ease forwards;
-  transform: translateX(-50%);
-  z-index: 10;
-}
-
-@keyframes popup {
-  0% {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(-50%) translateY(-50px);
-  }
-}
-
-#game-over {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 192, 203, 0.85);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
-}
-
-.game-over-text {
-  background-color: white;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.game-over-text button {
-  margin-top: 15px;
-  font-size: 1em;
-  padding: 10px 20px;
-  background-color: #ff69b4;
-  border: none;
+  width: 70px;
+  height: 70px;
+  background: #fff;
   border-radius: 10px;
-  color: white;
-  cursor: pointer;
-}
-
-.game-over-text button:hover {
-  background-color: #ff85c1;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5px #aaa;
 }
